@@ -15,6 +15,35 @@ namespace GestiónInventario
             {
                 Console.WriteLine("Por favor, ingrese un número entero positivo.");
             }
+
+            for (int i = 0; i < cantidad; i++)
+            {
+                Console.WriteLine($"\nProducto {i + 1} ");
+
+                string nombre;
+                do
+                {
+                    Console.WriteLine("Nombre: ");
+                    nombre = Console.ReadLine();
+                    if (string.IsNullOrWhiteSpace(nombre))
+                    {
+                        Console.WriteLine("El nombre del producto no puede estar vacío.");
+                    }
+                } while (string.IsNullOrWhiteSpace(nombre));
+
+                decimal precio;
+                do
+                {
+                    Console.WriteLine("Precio: ");
+                    if (!decimal.TryParse(Console.ReadLine(), out precio) || precio <= 0)
+                    {
+                        Console.WriteLine("Por favor, ingrese un precio válido (número positivo).");
+                    }
+                } while (precio <= 0);
+
+                Producto producto = new Producto(nombre, precio);
+                inventario.AgregarProducto(producto);
+            }
         }
     }
 }
