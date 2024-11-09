@@ -27,5 +27,16 @@ namespace GestiónInventario
              .Where(p => p.Precio > precioMinimo)//Filtra productos con precio mayor al minimo especificado
                  .OrderBy(p => p.Precio); //ordena los productos de menor a mayor precio
         }
+
+        public bool ActualizarPrecioProductos(string nombre, decimal nuevoPrecio)
+        {
+            var producto = productos.FirstOrDefault(p => p.Nombre.Equals(nombre, StringComparison.OrdinalIgnoreCase));
+            if (producto != null)
+            {
+                producto.Precio = nuevoPrecio;
+                return true;
+            }
+            return false;
+        }
     }
 }
