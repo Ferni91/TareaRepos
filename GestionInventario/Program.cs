@@ -44,6 +44,31 @@ namespace GestiónInventario
                 Producto producto = new Producto(nombre, precio);
                 inventario.AgregarProducto(producto);
             }
+            decimal precioMinimo;
+            do
+            {
+                Console.WriteLine("\nIngrese el precio mínimo para filtrar los productos: ");
+                if (!decimal.TryParse(Console.ReadLine(), out precioMinimo) || precioMinimo < 0)
+                {
+                    Console.WriteLine("Por favor, ingrese un precio mínimo válido (número no negativo).");
+                }
+            } while (precioMinimo < 0);
+
+            // Filtrar y mostrar productos
+            var productosFiltrados = inventario.FiltrarYOrdenarProductos(precioMinimo);
+
+            Console.WriteLine("\nProductos filtrados y ordenados: ");
+            if (!productosFiltrados.Any())
+            {
+                Console.WriteLine("No hay productos que cumplan con el criterio de filtro.");
+            }
+            else
+            {
+                foreach (var producto in productosFiltrados)
+                {
+                    producto.MostrarDatos();
+                }
+            }
         }
     }
 }
