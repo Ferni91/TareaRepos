@@ -79,7 +79,83 @@ namespace GestiónInventario
                 Console.WriteLine("4. Salir");
                 opcion = Console.ReadLine();
 
-                
+                switch (opcion)
+                {
+                    case "1":
+                        // Actualizar el precio de productos
+                        string actualizarOtro;
+                        do
+                        {
+                            Console.WriteLine("Ingrese el nombre del producto que desea actualizar:");
+                            string nombreProducto = Console.ReadLine();
+
+                            decimal nuevoPrecio;
+                            do
+                            {
+                                Console.WriteLine("Ingrese el nuevo precio:");
+                                if (!decimal.TryParse(Console.ReadLine(), out nuevoPrecio) || nuevoPrecio <= 0)
+                                {
+                                    Console.WriteLine("Por favor, ingrese un precio válido (número positivo).");
+                                }
+                            } while (nuevoPrecio <= 0);
+
+                            bool actualizado = inventario.ActualizarPrecioProductos(nombreProducto, nuevoPrecio);
+                            if (actualizado)
+                            {
+                                Console.WriteLine("El precio del producto ha sido actualizado.");
+                            }
+                            else
+                            {
+                                Console.WriteLine("Producto no encontrado.");
+                            }
+
+                            Console.WriteLine("¿Desea actualizar otro producto? (s/n)");
+                            actualizarOtro = Console.ReadLine();
+                        } while (actualizarOtro.Equals("s", StringComparison.OrdinalIgnoreCase));
+                        break;
+
+                    case "2":
+                        // Eliminar productos
+                        string eliminarOtro;
+                        do
+                        {
+                            Console.WriteLine("Ingrese el nombre del producto que desea eliminar:");
+                            string nombreProducto = Console.ReadLine();
+
+                            bool eliminado = inventario.EliminarProducto(nombreProducto);
+                            if (eliminado)
+                            {
+                                Console.WriteLine("El producto ha sido eliminado.");
+                            }
+                            else
+                            {
+                                Console.WriteLine("Producto no encontrado.");
+                            }
+
+                            Console.WriteLine("¿Desea eliminar otro producto? (s/n)");
+                            eliminarOtro = Console.ReadLine();
+                        } while (eliminarOtro.Equals("s", StringComparison.OrdinalIgnoreCase));
+                        break;
+
+                    case "3":
+                        // Contar y agrupar productos por precio
+                        var grupos = inventario.ContarYAgruparProductosPorPrecio();
+                        Console.WriteLine("\nConteo de productos por rango de precios:");
+                        foreach (var grupo in grupos)
+                        {
+                            Console.WriteLine($"{grupo.Key}: {grupo.Value}");
+                        }
+                        break;
+
+                    case "4":
+                        Console.WriteLine("Saliendo del sistema de gestión de inventario.");
+                        break;
+
+                    default:
+                        Console.WriteLine("Opción no válida. Por favor, seleccione una opción del 1 al 4.");
+                        break;
+                }
+
             } while (opcion != "4");
         }
     }
