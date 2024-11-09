@@ -13,6 +13,15 @@ namespace GestiónInventario
 
         public decimal Precio { get; set; }
 
+        public Producto(string nombre, decimal precio)
+        {
+            Nombre = nombre;
+            Precio = precio;
+        }
+        public void MostrarDatos()
+        {
+            Console.WriteLine($"Producto: {Nombre}, Precio: {Precio}");
+        }
 
     }
 }
