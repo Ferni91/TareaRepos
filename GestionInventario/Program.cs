@@ -69,6 +69,18 @@ namespace GestiónInventario
                     producto.MostrarDatos();
                 }
             }
+            string opcion;
+            do
+            {
+                Console.WriteLine("\nSeleccione una opción:");
+                Console.WriteLine("1. Actualizar el precio de un producto");
+                Console.WriteLine("2. Eliminar un producto");
+                Console.WriteLine("3. Contar y agrupar productos por precio");
+                Console.WriteLine("4. Salir");
+                opcion = Console.ReadLine();
+
+                
+            } while (opcion != "4");
         }
     }
 }
