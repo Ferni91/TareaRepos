@@ -48,6 +48,16 @@ namespace GestiónInventario
             }
             return false;
         }
+        public Dictionary<string, int> ContarYAgruparProductosPorPrecio()
+        {
+            var grupos = new Dictionary<string, int>
+        {
+            { "Menores a 100", productos.Count(p => p.Precio < 100) },
+            { "Entre 100 y 500", productos.Count(p => p.Precio >= 100 && p.Precio <= 500) },
+            { "Mayores a 500", productos.Count(p => p.Precio > 500) }
+        };
 
+            return grupos;
+        }
     }
 }
