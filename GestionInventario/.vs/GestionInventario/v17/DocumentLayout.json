@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\ferna\\OneDrive\\Escritorio\\Programaci\u00F3n\\Repositorio\\GestionInventario\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1963F718-FC1B-42A1-89C9-5DBA26933D1C}|GestionInventario.csproj|c:\\users\\ferna\\onedrive\\escritorio\\programaci\u00F3n\\repositorio\\gestioninventario\\inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1963F718-FC1B-42A1-89C9-5DBA26933D1C}|GestionInventario.csproj|solutionrelative:inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1963F718-FC1B-42A1-89C9-5DBA26933D1C}|GestionInventario.csproj|c:\\users\\ferna\\onedrive\\escritorio\\programaci\u00F3n\\repositorio\\gestioninventario\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1963F718-FC1B-42A1-89C9-5DBA26933D1C}|GestionInventario.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1963F718-FC1B-42A1-89C9-5DBA26933D1C}|GestionInventario.csproj|c:\\users\\ferna\\onedrive\\escritorio\\programaci\u00F3n\\repositorio\\gestioninventario\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1963F718-FC1B-42A1-89C9-5DBA26933D1C}|GestionInventario.csproj|solutionrelative:producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1963F718-FC1B-42A1-89C9-5DBA26933D1C}|GestionInventario.csproj|c:\\users\\ferna\\onedrive\\escritorio\\programaci\u00F3n\\repositorio\\gestioninventario\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1963F718-FC1B-42A1-89C9-5DBA26933D1C}|GestionInventario.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1963F718-FC1B-42A1-89C9-5DBA26933D1C}|GestionInventario.csproj|c:\\users\\ferna\\onedrive\\escritorio\\programaci\u00F3n\\repositorio\\gestioninventario\\inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1963F718-FC1B-42A1-89C9-5DBA26933D1C}|GestionInventario.csproj|solutionrelative:inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,11 +22,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Inventario.cs",
               "DocumentMoniker": "C:\\Users\\ferna\\OneDrive\\Escritorio\\Programaci\u00F3n\\Repositorio\\GestionInventario\\Inventario.cs",
               "RelativeDocumentMoniker": "Inventario.cs",
@@ -45,21 +45,23 @@
               "RelativeDocumentMoniker": "Producto.cs",
               "ToolTip": "C:\\Users\\ferna\\OneDrive\\Escritorio\\Programaci\u00F3n\\Repositorio\\GestionInventario\\Producto.cs",
               "RelativeToolTip": "Producto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T00:01:51.465Z"
+              "WhenOpened": "2024-11-09T00:01:51.465Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ferna\\OneDrive\\Escritorio\\Programaci\u00F3n\\Repositorio\\GestionInventario\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\ferna\\OneDrive\\Escritorio\\Programaci\u00F3n\\Repositorio\\GestionInventario\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T00:01:36.712Z"
+              "WhenOpened": "2024-11-09T00:01:36.712Z",
+              "EditorCaption": ""
             }
           ]
         }
